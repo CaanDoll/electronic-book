@@ -1,7 +1,6 @@
 {
-  "name": "hexo-site",
+  "name": "electronic-book",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "dev": "hexo server",
     "build": "hexo g"
