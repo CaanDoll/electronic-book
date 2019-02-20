@@ -9,7 +9,7 @@ install:
 script:
   - npm run build
 after_success:
-  - scp -o stricthostkeychecking=no -r ./public root@47.99.115.84:/home/electronic-book
+  - scp -o stricthostkeychecking=no -r ./public root@$remote_host:/home/electronic-book
 branches:
   only:
     - master
