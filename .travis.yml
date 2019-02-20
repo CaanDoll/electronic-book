@@ -1,24 +1,21 @@
 language: node_js
 node_js: stable
 before_install:
-- openssl aes-256-cbc -K $encrypted_bc1057678923_key -iv $encrypted_bc1057678923_iv
-  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
-- openssl aes-256-cbc -K $encrypted_bc1057678923_key -iv $encrypted_bc1057678923_iv
-  -in id_rsa.enc -out ~/.ssh/id_rsa -d
-- chmod 600 ~/.ssh/id_rsa
-- echo -e "Host 47.99.115.84\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - openssl aes-256-cbc -K $encrypted_bc1057678923_key -iv $encrypted_bc1057678923_iv
+    -in id_rsa.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
 install:
-- npm i
+  - npm i
 script:
-- npm run build
+  - npm run build
 after_success:
-- scp -o stricthostkeychecking=no -r ./public root@47.99.115.84:/home/electronic-book
+  - scp -o stricthostkeychecking=no -r ./public root@47.99.115.84:/home/electronic-book
 branches:
   only:
-  - master
+    - master
 notifications:
   email:
     recipients:
-    - caandoll@aliyun.com
+      - caandoll@aliyun.com
     on_success: always
     on_failure: always
