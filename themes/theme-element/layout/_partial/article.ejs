@@ -1,4 +1,4 @@
-<article id="<%= post.layout %>-<%= post.slug %>"
+<article id="<%= post.slug %>"
   class="article white-box article-type-<%= post.layout %>"
   itemscope itemprop="blogPost">
 
@@ -25,19 +25,6 @@
         style: 'none',
         separator: ''
       }) %>
-    <% } %>
-  </div>
-
-  <div class="post-nav">
-    <% if (post.next){ %>
-      <div class="post-nav-prev post-nav-item">
-          <a href="<%- url_for(post.next.path) %>" >上一篇：<%= post.next.title %><span class="icon icon-chevron-left"></span></a>
-      </div>
-    <% } %>
-    <% if (post.prev){ %>
-      <div class="post-nav-next post-nav-item">
-          <a href="<%- url_for(post.prev.path) %>" >下一篇：<%= post.prev.title %><span class="icon icon-chevron-right"></span></a>
-      </div>
     <% } %>
   </div>
 
