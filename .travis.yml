@@ -9,7 +9,8 @@ install:
 script:
   - npm run build
 after_success:
-  - scp -o stricthostkeychecking=no -r -v public/ root@$remote_host:/home/electronic-book/
+  - ssh -o StrictHostKeyChecking=no root@$remote_host 'rm -rf /home/electronic-book/public'
+  - scp -o stricthostkeychecking=no -r -v public root@$remote_host:/home/electronic-book/public
 branches:
   only:
     - master
