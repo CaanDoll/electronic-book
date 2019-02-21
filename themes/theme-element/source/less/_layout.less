@@ -80,6 +80,14 @@
       font-size: 20px;
       font-weight: 500;
       transition: all 0.24s;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      /* autoprefixer: off*/
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on*/
+      -webkit-line-clamp: 7;
+      max-height: 200px;
     }
 
     .post-meta {
