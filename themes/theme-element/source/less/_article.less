@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   max-width: 700px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-bottom: 20px;
 
   @media (max-width: @on-phone) {
@@ -12,16 +12,16 @@
   }
 
   .article-header {
-    padding: 20px 0px 40px 0;
+    padding: 20px 0 40px 0;
 
     @media (max-width: @on-phone) {
-      padding: 0px 0px 40px 0;
+      padding: 0 0 40px 0;
     }
 
     h1 {
       font-size: 2em;
       line-height: 1.2;
-      margin-bottom: 0px;
+      margin-bottom: 0;
 
       @media (max-width: @on-phone) {
         font-size: 1.5em;
@@ -72,7 +72,7 @@
     /* &::before {
 	    position: absolute;
 	    left: -20px;
-	    top: 0px;
+	    top: 0;
 	    content: "#";
 	    color: @material-green;
 	    font-weight: normal;
@@ -91,7 +91,7 @@
   figure {
     width: 100%;
     font-size: 13px;
-    margin: 20px 0px;
+    margin: 20px 0;
     padding: 10px 15px;
     background: @background-color;
     overflow: auto;
@@ -110,7 +110,7 @@
 
   ul,
   ol {
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0 20px 0;
     padding-left: 30px;
   }
 
@@ -128,8 +128,8 @@
   blockquote {
     position: relative;
     width: 100%;
-    margin: 20px 0px;
-    padding: 0px 20px;
+    margin: 20px 0;
+    padding: 0 20px;
     border-left: 4px solid @material-green;
   }
 
@@ -147,14 +147,14 @@
     }
 
     figure {
-      margin: 0px;
+      margin: 0;
     }
   }
 
   code {
     color: darken(@brand-color, 2%);
     padding: 3px 5px;
-    margin: 0px 2px;
+    margin: 0 2px;
     border-radius: 2px;
     white-space: nowrap;
     font-size: 0.8em;
@@ -165,11 +165,11 @@
     font-size: 16px;
 
     h1, h2, h3 {
-      margin: 30px 0px;
+      margin: 30px 0;
     }
 
     h4, h5, h6 {
-      margin: 20px 0px;
+      margin: 20px 0;
     }
 
     h1 {
@@ -277,5 +277,5 @@
 
 #comments {
   position: relative;
-  padding: @spacing-unit 0px;
+  padding: @spacing-unit 0;
 }

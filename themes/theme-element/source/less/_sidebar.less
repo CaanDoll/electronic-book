@@ -18,7 +18,7 @@
 
   .sidebar-switch {
     width: 200px;
-    margin: 0px auto 20px auto;
+    margin: 0 auto 20px auto;
     opacity: 0;
     visibility: hidden;
     transition: all 0.24s ease;
@@ -54,22 +54,23 @@
 .site-bio {
   position: relative;
   opacity: 0;
-  transform: translate3d(0px, -20px, 0px);
+  transform: translate3d(0, -20px, 0);
   transition: all 0.24s ease;
 
   &.show {
     opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0, 0, 0);
   }
 
   .window-nav {
     width: 125px;
-    padding: 0px 0px 0px 15px;
+    padding: 0 0 0 15px;
     text-align: left;
   }
 
   .catalog {
     & > li {
+      list-style: none;
       margin-top: 8px;
       margin-bottom: 8px;
       & > a {
@@ -80,7 +81,7 @@
   }
 
   .shortcuts {
-    padding: 0px 5px;
+    padding: 0 5px;
 
     .bk {
       margin-bottom: 5px;
@@ -126,7 +127,7 @@
       }
 
       .icon {
-        margin-right: 0px;
+        margin-right: 0;
       }
     }
 
@@ -134,15 +135,15 @@
       color: lighten(#8f8f8f, 10%);
       margin-top: 10px;
       line-height: 140%;
-      padding: 0px 15px;
+      padding: 0 15px;
       font-size: 13px;
     }
   }
 
   .social {
     position: relative;
-    margin: 15px 0px;
-    padding: 0px;
+    margin: 15px 0;
+    padding: 0;
 
     a {
       display: inline-block;
@@ -269,11 +270,11 @@
   max-height: 450px;
   overflow: auto;
   opacity: 0;
-  transform: translate3d(0px, -20px, 0px);
+  transform: translate3d(0, -20px, 0);
   transition: all 0.24s ease;
 
   &.show {
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 
