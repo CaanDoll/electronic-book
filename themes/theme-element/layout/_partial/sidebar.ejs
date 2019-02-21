@@ -46,7 +46,7 @@
         <!-- Catalog -->
         <ul class="catalog clearfix">
             <% site.posts.sort('sec', 1).each(function(post){ %>
-                <li><a href="#<%= post.slug %>"><%= post.sec %> <%= post.title %></a></li>
+                <li><a data-id="#<%= post.slug %>" class="catalog-item"><%= post.sec %> <%= post.title %></a></li>
             <% }) %>
         </ul>
 
