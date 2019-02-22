@@ -5,15 +5,15 @@
 # Site
 title: 灯塔
 subtitle:
-description:
-keywords:
+description: 这是一个
+keywords: 啊，哦，饿
 author: 拖鞋团队
 language: zh-CN
 #timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-#url: http://yoursite.com
+url: http://yoursite.com
 root: /
 permalink: :title/
 permalink_defaults:
@@ -53,11 +53,6 @@ index_generator:
   per_page: 0
   order_by: sec
   
-# Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
-
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
@@ -75,22 +70,6 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: theme-element
 
-# toc
-toc:
-  maxdepth: 3
-  class: toc
-  slugify: transliteration
-  decodeEntities: false
-  anchor:
-    position: after
-    symbol: '#'
-    style: header-anchor
-
-# siteMap
-sitemap:
-  path: sitemap.xml
-  category: false
-
 autoprefixer:
   browsers:
     - '> 1%'
@@ -98,8 +77,3 @@ autoprefixer:
     - 'Firefox >= 20'
     - 'iOS >= 7'
     - 'Android >= 4'
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type:

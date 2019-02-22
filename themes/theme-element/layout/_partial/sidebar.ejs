@@ -1,30 +1,6 @@
 <div class="site-sidebar">
 
-    <% display_toc = (is_post() || is_page()) && post.toc === true; %>
-
-    <div class="sidebar-switch clearfix <%- display_toc ? 'show' : '' %>"
-         style="display: <%- display_toc ? 'block' : 'none' %>">
-        <a class="dark-btn active" data-toggle="toc">
-            <span class="icon icon-list"></span>
-            <span class="text">Index</span>
-        </a>
-        <a class="dark-btn" data-toggle="bio">
-            <span class="icon icon-person"></span>
-            <span class="text">Bio</span>
-        </a>
-    </div>
-
-    <div class="site-toc <%- display_toc ? 'show' : '' %>"
-         style="display: <%- display_toc ? 'block' : 'none' %>">
-        <% if ( display_toc ) { %>
-            <%- toc(post.content) %>
-        <% } else { %>
-            <div class="no-index">No Index</div>
-        <% } %>
-    </div>
-
-    <div class="site-bio <%- display_toc ? '' : 'show' %>"
-         style="display: <%- display_toc ? 'none' : 'block' %>">
+    <div class="site-bio show">
 
         <!-- About Me -->
         <div class="about-me clearfix">
